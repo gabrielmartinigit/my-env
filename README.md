@@ -1,19 +1,5 @@
 # My Env
 
-My workspace configuration
-
-```
-.
-├── LICENSE
-├── README.md
-├── vscode
-│   └── settings.json
-└── zshell
-    └── .zshrc
-```
-
-## References
-
 - Oh-my-zsh: https://ohmyz.sh/
 - PowerLevel10K: https://github.com/romkatv/powerlevel10k
 - Nerd Fonts: https://www.nerdfonts.com/
