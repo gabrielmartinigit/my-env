@@ -4,6 +4,10 @@
 
 ## Setting Up
 
+> :warning: It is going to install more than **200** packages. Check [brew packages](brew/packages.txt) before to review what you want.
+
+1. Open terminal and execute script
+
 ```bash
 ./install.sh
 ```
