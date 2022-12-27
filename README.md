@@ -1,5 +1,7 @@
 # My Env
 
+![Print](assets/devenv.png)
+
 ## Setting Up
 
 ```bash
