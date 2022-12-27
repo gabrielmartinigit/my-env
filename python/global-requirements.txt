@@ -1,0 +1,9 @@
+virtualenv
+black
+pydocstyle
+bandit
+mypy
+notebook
+jupyterlab
+flake8
+autopep8

@@ -1,5 +1,13 @@
 # My Env
 
+## Setting Up
+
+```bash
+./install.sh
+```
+
+## References
+
 - Oh-my-zsh: https://ohmyz.sh/
 - PowerLevel10K: https://github.com/romkatv/powerlevel10k
 - Nerd Fonts: https://www.nerdfonts.com/
