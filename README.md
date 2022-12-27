@@ -6,6 +6,21 @@
 ./install.sh
 ```
 
+### iTerm2
+
+1. Open iTerm
+
+```bash
+open -a iterm
+```
+
+2. Open profiles <kbd>command</kbd>+<kbd>O</kbd> and click on **Edit Profiles**
+3. Click on **+** to add a New Profile
+4. Click on **Other Actions** and **Import JSON Profiles**
+5. Select the [iterm/profile.json](iterm/profile.json)
+6. Set as _default_
+7. Reopen iTerm
+
 ## References
 
 - Oh-my-zsh: https://ohmyz.sh/
