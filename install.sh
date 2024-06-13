@@ -12,8 +12,8 @@ echo -ne '>>>>>>>                   [40%]\r'
 
 # install python versions
 asdf plugin-add python
-asdf install python 3.8.8
-asdf global python 3.8.8
+asdf install python 3.10.14
+asdf global python 3.10.14
 
 # install python global packages
 pip install -r python/global-requirements.txt
