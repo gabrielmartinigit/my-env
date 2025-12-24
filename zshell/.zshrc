@@ -1,3 +1,6 @@
+# Kiro CLI pre block. Keep at the top of this file.
+[[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh"
+
 # ZSH
 ZSH_DISABLE_COMPFIX="true"
 export ZSH="$HOME/.oh-my-zsh"
@@ -41,7 +44,7 @@ alias virtualenv='python -m virtualenv'
 export OPENSSL_ROOT_DIR=$(brew --prefix openssl@3)
 
 # DOCKER
-export DOCKER_HOST=unix:///Users/martinig/.docker/run/docker.sock
+export DOCKER_HOST="unix://$HOME/.colima/docker.sock"
 
 # tabtab source for packages
 # uninstall by removing these lines
@@ -51,3 +54,12 @@ autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
 
 export PATH=$PATH:/Users/martinig/.toolbox/bin
+
+export PATH=$HOME/.toolbox/bin:$PATH
+
+typeset -g POWERLEVEL9K_TERM_SHELL_INTEGRATION=true
+
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
+
+# Kiro CLI post block. Keep at the bottom of this file.
+[[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh"

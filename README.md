@@ -30,6 +30,22 @@ open -a iterm
 6. Set as _default_
 7. Reopen iTerm
 
+## Backup
+
+```bash
+# asdf
+asdf list > asdf/versions.txt
+
+# brew
+brew list > brew/packages.txt
+
+# vscode
+code --list-extensions > vscode/extensions.txt
+
+# zshell
+cat ~/.zshrc > zshell/.zshrc
+```
+
 ## References
 
 - Oh-my-zsh: https://ohmyz.sh/

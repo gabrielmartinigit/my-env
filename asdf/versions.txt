@@ -1,8 +1,18 @@
 java
  *openjdk-15.0.2
-nodejs
- *20.14.0
-python
- *3.10.14
 ruby
  *3.1.0
+golang
+  1.23.9
+nodejs
+  20.14.0
+  20.16.0
+ *22.18.0
+python
+  3.10.14
+ *3.12.4
+  3.8.20
+terraform
+ *1.14.0
+uv
+ *0.9.9

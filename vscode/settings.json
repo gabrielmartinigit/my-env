@@ -1,6 +1,5 @@
 {
-  // VSCode theme
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Dracula Theme",
   "workbench.iconTheme": "material-icon-theme",
   "editor.fontSize": 14,
   "editor.lineHeight": 18,
@@ -10,41 +9,33 @@
   "editor.renderLineHighlight": "gutter",
   "editor.wordWrap": "on",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-
-  // VSCode terminal
+  "editor.formatOnSave": false,
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.defaultProfile.linux": "zsh",
   "terminal.integrated.defaultProfile.windows": "zsh",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontFamily": "Hack Nerd Font",
-
-  // Python
   "python.venvPath": "${workspaceFolder}/.venv",
   "python.terminal.activateEnvInCurrentTerminal": true,
   "python.analysis.autoImportCompletions": true,
   "black-formatter.args": ["--line-length", "79"],
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnType": true
+  },
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnType": true
   },
-
-  // Shell
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
-
-  // Jupyter
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
-
-  // Terraform
   "[terraform]": {
     "editor.defaultFormatter": "hashicorp.terraform"
   },
-
-  // TODO
   "todohighlight.include": [
     "**/*.py",
     "**/*.js",
@@ -63,6 +54,25 @@
   "aws.suppressPrompts": {
     "codeWhispererNewWelcomeMessage": true
   },
-  "window.zoomLevel": 3,
-  "python.defaultInterpreterPath": "/Users/martinig/Desktop/fast-demos/.venv"
+  "redhat.telemetry.enabled": true,
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "terminal.integrated.env.osx": {
+    "Q_NEW_SESSION": "1"
+  },
+  "remote.SSH.connectTimeout": 120,
+  "remote.SSH.defaultExtensions": ["amazonwebservices.aws-toolkit-vscode"],
+  "amazonQ.suppressPrompts": {
+    "amazonQChatDisclaimer": true,
+    "amazonQChatPairProgramming": true
+  },
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "kiroAgent.agentModelSelection": "CLAUDE_SONNET_4_20250514_V1_0",
+  "kiroAgent.agentAutonomy": "Supervised",
+  "kiroAgent.trustedCommands": ["terraform *"],
+  "kiroAgent.modelSelection": "claude-opus-4.5",
+  "aws.cloudformation.telemetry.enabled": true,
+  "codesnap.transparentBackground": true,
+  "codesnap.boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px"
 }
